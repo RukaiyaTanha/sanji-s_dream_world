@@ -30,7 +30,7 @@ import type { Locale } from "./locales";
 
 /** Preview image shown when the link is shared (WhatsApp, Messenger, Facebook...). File: public/images/og-image.jpg */
 const ogImage = {
-  url: "/images/og-image.jpg",
+  url: "/images/image.png",
   width: 1200,
   height: 630,
   alt: siteConfig.name,
