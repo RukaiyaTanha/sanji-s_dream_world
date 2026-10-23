@@ -1,0 +1,41 @@
+/*
+ * DESIGN TOKENS — colours, type and spacing in one place.
+ *
+ * COLOURS: the values below are STAND-INS. Your original palette lives in your old
+ * style.css / style2.css / style3.css. Copy those hex values over these ones and the
+ * whole site re-colours itself; nothing else needs to change.
+ *   --c-paper         page background
+ *   --c-surface       frames, form fields, the commission slip
+ *   --c-ink           main text and the dark band
+ *   --c-muted         secondary text (keep at least 4.5:1 contrast on --c-paper)
+ *   --c-line          hairlines and borders
+ *   --c-accent        buttons and links (white text must stay readable on it)
+ *   --c-accent-soft   light tint band
+ */
+:root {
+  --c-paper: #fbf7ef;
+  --c-surface: #fffdf8;
+  --c-ink: #30251f;
+  --c-muted: #786b62;
+  --c-line: #e7d9cc;
+  --c-accent: #c86443;
+  --c-accent-strong: #a84932;
+  --c-accent-soft: #f4dfcf;
+  --c-on-accent: #ffffff;
+  --c-ink-band: #30251f;
+  --c-on-ink: #fff8ee;
+  --c-danger: #9b1c1c;
+
+  --f-display: var(--font-display-en), Georgia, "Times New Roman", serif;
+  --f-body: var(--font-body), system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --radius-s: 8px;
+  --radius-m: 18px;
+  --shadow-frame: 0 2px 5px rgba(48, 37, 31, 0.08), 0 22px 46px -18px rgba(48, 37, 31, 0.28);
+  --header-h: 4.75rem;
+}
+
+/* Bangla pages use a Bangla serif for headings and no letter-spacing tricks. */
+html[lang="bn"] {
+  --f-display: var(--font-display-bn), "Noto Serif Bengali", serif;
+}
