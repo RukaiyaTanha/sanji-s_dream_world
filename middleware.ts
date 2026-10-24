@@ -11,6 +11,14 @@ export function middleware(request: NextRequest) {
   const first = pathname.split("/")[1] ?? "";
   if (isLocale(first)) return NextResponse.next();
 
+    // Check if the request is from a social media bot
+  const ua = request.headers.get("user-agent") ?? "";
+  if (/whatsapp|facebookexternalhit|facebot|twitterbot|telegrambot|linkedinbot|slackbot|discordbot/i.test(ua)) {
+    const url = request.nextUrl.clone();
+    url.pathname = `/${defaultLocale}${pathname === "/" ? "" : pathname}`;
+    return NextResponse.rewrite(url);
+  }
+
   const cookie = request.cookies.get("NEXT_LOCALE")?.value;
   const preferred = request.headers.get("accept-language")?.split(",")[0] ?? "";
   let locale: Locale = defaultLocale;
