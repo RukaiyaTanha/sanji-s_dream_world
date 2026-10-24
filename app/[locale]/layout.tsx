@@ -67,9 +67,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       description: dict.meta.homeDesc,
       siteName: siteConfig.name,
       type: "website",
-      images: [{ url: "/images/image.png", width: 1200, height: 630, alt: siteConfig.name }],
+      images: [{ url: "/images/sadiya.jpg", width: 1200, height: 630, alt: siteConfig.name }],
     },
-    twitter: { card: "summary_large_image", images: ["/images/image.png"] },
+    twitter: { card: "summary_large_image", images: ["/images/sadiya.jpg"] },
   };
 }
 
