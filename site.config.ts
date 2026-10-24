@@ -6,7 +6,7 @@
  */
 export const siteConfig = {
   name: "Sanji's DreamWorld",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://sanjisdreamworld.vercel.app",
 
   /** Default currency for prices in data/products.ts. Change the symbol/code here. */
   currency: { code: "BDT", symbol: "৳" },
