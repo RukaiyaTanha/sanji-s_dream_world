@@ -91,7 +91,7 @@ const FLOATERS: Floater[] = [
   { src: "/images/miniature/1.jpeg", w: 11, ar: "1 / 1", r: -6, o: 0.95, b: 0, d: 9, delay: 0, pos: { top: "9%", left: "3%" } },
   { src: "/images/village/1.jpeg", w: 12, ar: "4 / 3", r: 5, o: 0.95, b: 0, d: 11, delay: -3, pos: { bottom: "8%", left: "7%" } },
   { src: "/images/fairy/1.jpeg", w: 7, ar: "1 / 1", r: 8, o: 0.6, b: 1.5, d: 13, delay: -6, pos: { top: "46%", left: "-1%" }, extra: true },
-  { src: "/images/3dclay/12.jpeg", w: 10, ar: "1 / 1", r: 6, o: 0.95, b: 0, d: 10, delay: -2, pos: { top: "27%", right: "3%" } },
+  { src: "/images/3dclay/5.jpg", w: 10, ar: "1 / 1", r: 6, o: 0.95, b: 0, d: 10, delay: -2, pos: { top: "27%", right: "3%" } },
   { src: "/images/painting/39.jpg", w: 9, ar: "4 / 5", r: -5, o: 0.95, b: 0, d: 12, delay: -5, pos: { bottom: "9%", right: "6%" } },
   { src: "/images/clock/1.jpg", w: 7, ar: "1 / 1", r: -9, o: 0.6, b: 1.5, d: 14, delay: -8, pos: { top: "50%", right: "-1%" }, extra: true },
 ];
